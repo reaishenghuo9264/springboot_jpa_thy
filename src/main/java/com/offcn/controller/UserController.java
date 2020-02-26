@@ -21,7 +21,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
+    ////
     @RequestMapping("/")
     public String findAll(Model model){
         List<User> userList = userService.findAll();
