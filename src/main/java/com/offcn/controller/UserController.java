@@ -21,13 +21,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-    ////
-    @RequestMapping("/")
-    public String findAll(Model model){
-        List<User> userList = userService.findAll();
-        model.addAttribute("userList",userList);
-        return "list";
-    }
+
 
     @RequestMapping("/toAdd")
     public String toAdd(){
